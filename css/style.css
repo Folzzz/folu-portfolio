@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* default basic styling */
+
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #110C11;
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+/* changing the span content of profile */
+.profile-class span::before {
+    content: '';
+    animation: profile 10s infinite;
+}
+
+.text-orange {
+    color: #AA3939;
+}
+
+.dark-shade {
+    background: #ececec;
+}
+.fa-bars {
+    background-color: #AA3939;
+}
+
+#feature-one {
+    margin: 5em 0;
+}
+
+.container {
+    width: 90%;
+}
+
+
+/* portfolio style */
+
+.card > img {
+    max-width: 100%;
+    min-height: 225px;
+    max-height: 225px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.card-text {
+    /* min-height: 250px;
+    max-height: 250px; */
+}
+
+/* about me style */
+
+
+.about-img > img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #AA3939;
+}
+
+
+/* contact us page */
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+}
+.boxes > div {
+    font-size: 1.2rem;
+    border: 3px solid #000;
+    padding: 1rem 1rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease-in;
+}
+.boxes > div:hover {
+    padding: 0.5rem 1.5rem;
+    background: #AA3939;
+}
+
+/* footer styles */
+.icons {
+    margin-top: 1rem;
+}
+.icons > a {
+    padding: 0.4rem;
+    color: #000000;
+}
+.icons a:hover {
+    color: #AA3939;
+    transition: all 0.4s ease-in;
+    
+}
+
+
+/* keyframes */
+@keyframes profile {
+    0% {
+        content: 'Retail Merchant';
+    }
+    20% {
+        content: 'Agriculturist';
+    }
+    40% {
+        content: 'Song Writer';
+    }
+    60% {
+        content: 'Teacher';
+    }
+    80% {
+        content: 'ChatBot Dev.';
+    }
+    100% {
+        content: 'Content Creator';
+    }
+}
+
+/* media queries */
+@media (max-width: 425px) {
+    /* about page */
+    .about-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    /* contact page */
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+    }
+    .boxes > div {
+        padding: 0.5rem 0.5rem;
+    }
+    .boxes > div:hover {
+        padding: 0.7rem 1rem;
+    }
+}
