@@ -17,6 +17,7 @@ html, body {
 
 .navbar-brand {
     font-family: cursive;
+    color: #AA3939 !important;
 }
 /* changing the span content of profile */
 .profile-class span::before {
@@ -45,6 +46,12 @@ html, body {
 
 
 /* portfolio style */
+
+@media (max-width: 560px) {
+    .skills__rows {
+        display: flex;
+    }
+}
 
 .card > img {
     max-width: 100%;
